@@ -1,0 +1,167 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fecff2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.input {
+    margin-top: 90px;
+}
+
+.escreva {
+    width: 320px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 340;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    margin: 16px 0;
+}
+
+.message {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    background-repeat: no-repeat;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.botoes {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.encriptar {
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+.encriptar:hover {
+    background: rgb(220, 8, 205);
+}
+
+.desencriptar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.desencriptar:hover {
+    background: rgb(220, 8, 205);
+}
+
+.informacao {
+    font-size: 15px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.copiar, .colar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.copiar:hover, .colar:hover {
+    background: rgb(220, 8, 205);
+    transform: scale(1.2);
+}
+
+.lado2 {
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    padding: 20px;
+    width: 336px;
+    height: auto;
+    text-align: center;
+}
+
+.aside_message img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.texto1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    margin-bottom: 16px;
+}
+
+.texto2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #495057;
+    margin-bottom: 16px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(64, 0, 255);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.fa-linkedin, .fa-github {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .input, .escreva, .botoes, .informacao, .lado2 {
+        width: auto; 
+    }
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto1, .texto2, .message {
+        width: 100%;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Desafio Oracle - Decodificador de Textos - Turma 07</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/Logo.jpg" alt="Logo da alura com a inicial da letra a" class="logo">
+    </header>
+    <main class="main">
+        <section>
+            <textarea class="input" cols="40" rows="6" placeholder="Digite seu texto..." ></textarea>
+            <div class="info">
+                <img src="./assets/exclamacao.jpg" class="img-alerta">
+                <h6 class="informacao">Apenas letras minúsculas e sem acento.</h6>  
+            </div>
+            <div class="botoes">
+                <button class="encriptar" onclick="btnEncriptar()">Criptografia</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">Descriptografia</button>
+            </div>
+        </section>        
+        <section class="escreva">
+            <div class="lado2">
+                <textarea class="message" cols="15" rows="6"></textarea>
+                <div class="aside_message">
+                    <img src="./assets/boneco.jpg" alt="boneco com uma lupa na mão olhando o diamante">
+                    <p class="texto1">Nenhuma mensagem encontrada</p>
+                    <p class="texto2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <button class="copiar" onclick="btnCopy()">Copiar</button>
+                    <button class="colar" onclick="copiedText()">Colar</button>
+                </div>
+            </div>
+        </section>    
+    </main>
+    <footer class="footer">
+        Desenvolvido por Maysa Lima - 2024
+        <a href="https://github.com/maysa2504" target="_blank" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/maysa-lima-4206b1254/" class="fa fa-linkedin"></a>
+    </footer> 
+    <script src="script.js"></script>
+</body>
+</html>
