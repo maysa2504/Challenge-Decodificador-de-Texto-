@@ -75,3 +75,19 @@ function checkOutputMessage() {
         imageElement.style.display = "block";
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
